@@ -12,17 +12,18 @@
 */
 
 Route::get('/',function(){
-    return'welcome';
+    return 'welcome';
 });
 Route::get('/',function(){
-    returnview('welcome');
+    return view('welcome');
 });
 Route::get('/',function(){
-    returnredirect('welcome');
+    return redirect('welcome');
 });
-Route::get('hello/{name?}',function($name='Everybody'){
-    return'Hello,'.$name;
+Route::get('hello/{name}',function($name){
+    return 'Hello,' . $name;
 });
+
 
 
 
